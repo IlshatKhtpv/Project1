@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таблица с ограничением для изображения</title>
+    <style>
+        table {
+            width: 80%;
+            margin: 20px auto; 
+            border-collapse: collapse; 
+            background-image: url('https://www.w3schools.com/w3images/fjords.jpg');
+            background-size: cover; 
+            background-position: center; 
+            border: 2px solid #333;
+            border-radius: 10px; 
+        }
+        td {
+            padding: 20px;
+            text-align: center;
+            border: 1px solid black;
+            color: white;
+            font-size: 16px;
+            font-family: Arial, sans-serif;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .image-cell img {
+            max-width: 100px; 
+            max-height: 100px; 
+            width: auto; 
+            height: auto; 
+            border-radius: 50%; }
+        h1 {
+            text-align: center;
+            color: #333;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Пример таблицы с ограничением для изображения</h1>
+    <table>
+        <tr>
+            <td class="image-cell">
+                <img src="D6u_9QS8Bdg.jpg" alt="Пример изображения">
+            </td>
+            <td>Текст в ячейке 1</td>
+            <td>Текст в ячейке 2</td>
+        </tr>
+        <tr>
+            <td>Текст в ячейке 3</td>
+            <td>Текст в ячейке 4</td>
+            <td>Текст в ячейке 5</td>
+        </tr>
+        <tr>
+            <td>Текст в ячейке 6</td>
+            <td>Текст в ячейке 7</td>
+            <td>Текст в ячейке 8</td>
+        </tr>
+    </table>
+
+</body>
+</html>
